@@ -71,6 +71,20 @@ nav{
   #responsive-design{
       min-height: 100vh;
   }
+  #responsive-design h1{
+    text-align: center;
+    position: relative;
+    text-decoration: underline;
+    font-size: 36px;
+  }
+  #responsive-design::after{
+    content: '';
+    height: 3px;
+    width: 3px;
+    display: block;
+    color: rgb(208, 56, 208);
+    top: 5px;
+  }
   #responsive-design p{
     font-size: 20px;
     text-align: center;
@@ -90,6 +104,14 @@ nav{
 }
 .column{
   background: #fff;
+  height: 500px;
+}
+.column h2{
+ height: 60px;
+ margin-bottom: 0px;
+}
+.column p {
+  height: 100px;
 }
 .img{
  border-radius: 10px;
@@ -102,6 +124,7 @@ border-radius: 10px;
 /* button div to view projects */
 .link{
   text-align: center;
+  margin-top: 10px;
 }
 #responsive-design a{
   padding: 10px 20px;
