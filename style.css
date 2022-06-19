@@ -56,8 +56,20 @@ nav{
     letter-spacing: 1px;
   }
   #kele{
-    color:rgb(101, 101, 247);
+    color:#6730EC;
     font-style: italic;
+    animation: shine 6s infinite ease-in-out;
+    animation-delay: 1s;
+    display: inline-block;
+  }
+  /* adding a css animation */
+  @keyframes shine {
+    0%{color: green}
+    50%{color: #6730EC;
+    transform: scale(1.2);}
+    
+    100%{color: red;}
+    
   }
   #home p{
     font-size: 1.3rem;
