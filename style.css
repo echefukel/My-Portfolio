@@ -34,10 +34,19 @@ nav{
     margin: 6px 0;
     transition: 0.4s;
   }
+  /* General Design for all Sections */
 
   section{
     min-height: 100vh;
+    margin-bottom: 40px;
+    margin-top: 40px;
     
+  }
+  .project-title{
+    text-align: center;
+    position: relative;
+    text-decoration: underline;
+    font-size: 36px;
   }
   /* Designing the Home Section  */
 
@@ -83,26 +92,15 @@ nav{
   #responsive-design{
       min-height: 100vh;
   }
-  #responsive-design h1{
-    text-align: center;
-    position: relative;
-    text-decoration: underline;
-    font-size: 36px;
-  }
-  #responsive-design::after{
-    content: '';
-    height: 3px;
-    width: 3px;
-    display: block;
-    color: rgb(208, 56, 208);
-    top: 5px;
-  }
-  #responsive-design p{
+  
+  p.description{
     font-size: 20px;
     text-align: center;
+    margin-top: 20px;
   }
-  #responsive-design h2{
+  .project-sections h2{
     text-align: center;
+    margin-top: 20px;
   }
 .project-container{
   display: grid;
@@ -117,30 +115,42 @@ nav{
 .column{
   background: #fff;
   height: 500px;
+  margin-top: 15px;
 }
 .column h2{
  height: 60px;
  margin-bottom: 0px;
 }
 .column p {
-  height: 100px;
+ height: 100px;
+  margin-top: 20px;
+  overflow-y: scroll;
 }
 .img{
  border-radius: 10px;
+ height: 250px;
+ 
  
 }
 img{
 width:100%;
+height: 100%;
 border-radius: 10px;
+display: block;
+}
+.github a{
+  font-size: 16px;
 }
 /* button div to view projects */
 .link{
   text-align: center;
   margin-top: 10px;
 }
-#responsive-design a{
+.link a{
   padding: 10px 20px;
   border-radius: 5px;
-  border: 1px solid;
+  border: 1px solid #551a8b;
+  color: #551a8b;
   text-decoration: none;
+  display: block;
 }
