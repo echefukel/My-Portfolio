@@ -38,8 +38,7 @@ nav{
 
   section{
     min-height: 100vh;
-    margin-bottom: 40px;
-    margin-top: 40px;
+  
     
   }
   .project-title{
@@ -47,6 +46,7 @@ nav{
     position: relative;
     text-decoration: underline;
     font-size: 36px;
+    color: blue;
   }
   /* Designing the Home Section  */
 
@@ -67,7 +67,7 @@ nav{
   #kele{
     color:#6730EC;
     font-style: italic;
-    animation: shine 6s infinite ease-in-out;
+    animation: shine 3s infinite ease-in-out;
     animation-delay: 1s;
     display: inline-block;
   }
@@ -82,15 +82,16 @@ nav{
   }
   #home p{
     font-size: 1.3rem;
-    font-style: italic;
+    
     color: #333;
     
 
   }
 
   /* Responsive design Session with HTML and CSS */
-  #responsive-design{
+  .project-sections{
       min-height: 100vh;
+      padding: 100px 0px;
   }
   
   p.description{
@@ -120,6 +121,9 @@ nav{
 .column h2{
  height: 60px;
  margin-bottom: 0px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
 }
 .column p {
  height: 100px;
@@ -139,7 +143,7 @@ border-radius: 10px;
 display: block;
 }
 .github a{
-  font-size: 16px;
+  font-size: 20px;
 }
 /* button div to view projects */
 .link{
@@ -153,4 +157,50 @@ display: block;
   color: #551a8b;
   text-decoration: none;
   display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+  #home div {
+      width: 70%;
+      
+  }
+  #home h1{
+    font-size: 3rem;
+     
+  }
+  #home p{
+      font-size: 24px;
+  }
+}
+
+
+/* media query for laptops and big devices */
+@media (min-width:1025px){
+  .project-container{
+    grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+
+    grid-gap: 40px;
+  }
+  
+  #home div{
+    width: 60%;
+    text-align: center;
+  }
+  #home h1{
+    font-size: 4rem;
+  }
+  #home p{
+    font-size: 1.5rem;
+  }
 }
